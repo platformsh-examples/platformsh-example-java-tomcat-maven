@@ -4,10 +4,10 @@ This project provides a starter kit for Tomcat projects hosted on Platform.sh. I
 
 There are many ways in which you can deploy and run Java applications on platform.sh, here we propose a simple topology that allows you to have quick and safe deployments. 
 
-The actual project is located in the `app` directory with `app/pom.xml` describing your Maven build. 
-This app is responsible for the build and compile phase (look at the `build` hook in `/app/.platform.app.yaml`). Its `deploy` hook takes the built artifcats and deployes them to the second application which runs a standard tomcat instance.
+The actual project is located in the `app/` directory with `app/pom.xml` describing your Maven build. 
+This app is responsible for the build and compile phase (look at the `build` hook in `app/.platform.app.yaml`). Its `deploy` hook takes the built artifcats and deploys them to the second application which runs a standard tomcat instance.
 
-Platform.sh only redeploys apps that have something changed, as such , every time you `git push` only the deployer app gets redeployed.
+Platform.sh only redeploys applications that have something changed, as such, every time you `git push` only the app gets redeployed, not tomcat.
 
 And as always, you can create new branches which will create a dedicated ephemeral staging for each branch.
 
@@ -25,4 +25,4 @@ That's it!  You now have a working "hello world" level project you can build on.
 
 ## Using as a reference
 
-You can also use this repository as a reference for your own projects, and borrow whatever code is needed. The most important parts are the `.platform.app.yaml` file and the `.platform` directory.
+You can also use this repository as a reference for your own projects, and borrow whatever code is needed. The most important parts are the `.platform.app.yaml` files and the `.platform` directory.
