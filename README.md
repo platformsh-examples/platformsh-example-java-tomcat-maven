@@ -25,4 +25,4 @@ That's it!  You now have a working "hello world" level project you can build on.
 
 ## Using as a reference
 
-You can also use this repository as a reference for your own projects, and borrow whatever code is needed. The most important parts are the `.platform.app.yaml` files and the `.platform` directory.
+You can also use this repository as a reference for your own projects, and borrow whatever code is needed. The most important parts are the `.platform.app.yaml` file and the `.platform` directory.
