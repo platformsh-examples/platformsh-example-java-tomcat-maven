@@ -1,5 +1,5 @@
 name: app
-type: java:8
+type: java:11
 disk: 128
 size: S
 hooks:

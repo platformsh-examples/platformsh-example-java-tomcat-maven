@@ -1,5 +1,5 @@
 name: tomcat
-type: java:8
+type: java:11
 disk: 2048
 mounts:
   "/workdir": "shared:files/workdir"
